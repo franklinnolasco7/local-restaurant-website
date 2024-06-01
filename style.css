@@ -1,0 +1,597 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Poppins:ital,wght@0,600;0,700;0,900;1,600&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Cookie";
+  src: url("Fonts/Cookie/Cookie-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Bartender-Semi-Condensed-Sans";
+  src: url("Fonts/Bartender Semicondensed Sans/Bartender\ SemiCondensed\ Sans.ttf");
+}
+
+@font-face {
+  font-family: "Bartender-Semi-Condensed-Serif";
+  src: url("Fonts/Bartender Semicondensed Serif/Bartender\ SemiCondensed\ Serif.ttf");
+}
+
+@font-face {
+  font-family: "Bartender-Bold-Serif";
+  src: url("Fonts/Bartender Bold Serif/bartender-bold-serif.ttf");
+}
+
+@font-face {
+  font-family: "Montseratt";
+  src: url("Fonts/Montseratt/Montserrat-Black.otf");
+}
+
+.html {
+  font-size: 63.4%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+/* class utils */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+/*Menu Button*/
+.btn {
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.btn-primary {
+  color: #ad9a74;
+  background: #150f0b;
+}
+
+.btn-primary:hover {
+  background: #856b39;
+  transition: background 0.3s ease-in-out;
+}
+
+/* navigation bar */
+.navbar input[type="checkbox"],
+.navbar .burger-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #1f1e1e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #150f0b;
+  color: #856b39;
+  opacity: 100;
+  height: 50px;
+  z-index: 12
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.home-items {
+  order: 2;
+  display: flex;
+}
+
+.home-items li {
+  list-style: none;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.home-items a {
+  font-family: "Bartender-Bold-Serif";
+  font-size: 25px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  transition: color 0.3s ease-in-out;
+  line-height: 21px;
+}
+
+.home-items a:hover {
+  color: #856b39;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo {
+  order: 1;
+  font-family: "Cookie";
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* showcase */
+.showcase-area {
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.336)),
+    url("Images/PanciteriaBG.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+}
+
+.main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+
+.tag-line {
+  color: #ad9a74;
+  font-family: "Bartender-Semi-Condensed-Serif";
+  font-size: 3.8rem;
+  text-shadow: 5px 4px 3px #000000, 0 0 3px #000000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+/* about */
+#about {
+  padding: 50px 0;
+  background: #000000;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about h2 {
+  font-family: "Montseratt";
+  font-size: 1.8rem;
+  color: #856b39;
+}
+
+#about p {
+  font-family: "Montseratt";
+  font-size: 1.3rem;
+  color: #cccccc;
+}
+
+#about .small {
+  font-family: "Bartender-Bold-Serif";
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.about-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+  transform: translate(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-img img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+}
+
+/* menu */
+
+#menu {
+  padding: 50px 0;
+  background: #000000;
+}
+
+#menu p {
+  font-family: "Montseratt";
+  font-size: 1.3rem;
+  color: #cccccc;
+  text-align: center;
+}
+
+#menu .header {
+  font-family: "Bartender-Bold-Serif";
+  font-size: 3.8rem;
+  color: #856b39;
+  font-weight: 600;
+  text-align: center;
+}
+
+.menu-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: menu-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes menu-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.menu-text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+  transform: translate(-150%);
+  animation: menu-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes menu-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.menu-img img {
+  display: block;
+  height: 600px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Food Menu */
+
+.food-menu-heading {
+  font-family: "Bartender-Bold-Serif";
+  text-align: center;
+  font-size: 4.3rem;
+  font-weight: 400;
+  color: #856b39;
+}
+
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px 30px 0px;
+}
+
+.food-menu-container img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.food-menu-item {
+  display: flex;
+  flex: 1 1 600px;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+.food-description {
+  margin: auto 1.5rem;
+}
+
+.food-title {
+  font-family: "Bartender-Semi-Condensed-Sans";
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #856b39;
+}
+
+.food-description p {
+  font-family: "Montseratt";
+  font-size: 1.3rem;
+  color: #cccccc;
+  font-weight: 500;
+}
+
+.food-description .food-price {
+  font-family: "Bartender-Semi-Condensed-Sans";
+  color: #856b39;
+  font-weight: 700;
+}
+
+/* Feedbacks */
+#feedbacks {
+  padding: 5rem 0;
+  background: rgb(0, 0, 0);
+}
+
+.feedback-title {
+  font-family: "Bartender-Bold-Serif";
+  color: #856b39;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.feedback-box .checked {
+  color: #ff9529;
+}
+
+.feedback-box .feedback-text {
+  font-family: "Montseratt";
+  margin: 1rem 0;
+  color: #cccccc;
+}
+
+.feedback-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.customer-photo img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.customer-photo p {
+  font-family: "Montseratt";
+  color: #cccccc;
+}
+
+/* Contacts */
+
+.contact-wrap {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-in {
+  padding: 40px 30px;
+}
+
+.contact-in:nth-child(1) {
+  flex: 30%;
+  background: linear-gradient(rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.336)),
+    url("Images/contact-bg2.jpeg");
+  color: #cccccc;
+}
+
+.contact-in:nth-child(2) {
+  flex: 45%;
+  background: #232323;
+}
+
+.contact-in:nth-child(3) {
+  flex: 25%;
+  padding: 0;
+}
+
+.contact-in h1 {
+  font-family: "Bartender-Bold-Serif";
+  font-size: 2.5rem;
+  color: #856b39;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.contact-in h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.contact-in h2 i {
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background: #f5f5f5;
+  color: #000;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.contact-in p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.contact-in ul {
+  padding: 0;
+  margin: 0;
+}
+
+.contact-in ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.contact-in ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background: #856b39;
+  border-radius: 50px;
+}
+
+.contact-in ul li a i {
+  font-size: 14px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.contact-in form {
+  width: 100%;
+  height: auto;
+}
+
+.contact-in-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  border: 1px solid #856b39;
+  outline: none;
+  padding-left: 5px;
+  background: transparent;
+  color: #cccccc;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Montseratt";
+}
+
+.contact-in-input::placeholder {
+  color: #cccccc;
+}
+
+.contact-in-textarea {
+  width: 100%;
+  height: 140px;
+  margin-bottom: 20px;
+  border: 1px solid #856b39;
+  outline: none;
+  padding-top: 5px;
+  padding-left: 5px;
+  background: transparent;
+  color: #cccccc;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Montseratt";
+}
+
+.contact-in-textarea::placeholder {
+  color: #cccccc;
+}
+
+.contact-in-btn {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #856b39;
+  outline: none;
+  background: transparent;
+  color: #cccccc;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Montseratt";
+  cursor: pointer;
+}
+
+.contact-in iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.map {
+  filter: grayscale(100%);
+}
+
+@media only screen and (max-width: 480px) {
+  .contact-in:nth-child(1) {
+    flex: 50%;
+  }
+
+  .contact-in:nth-child(2) {
+    flex: 50%;
+  }
+
+  .contact-in:nth-child(3) {
+    flex: 100%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .contact-in:nth-child(1) {
+    flex: 50%;
+  }
+
+  .contact-in:nth-child(2) {
+    flex: 50%;
+  }
+
+  .contact-in:nth-child(3) {
+    flex: 100%;
+  }
+}
+
+/* Footer */
+
+#footer h2 {
+  font-family: "Montseratt";
+  text-align: center;
+  font-size: 1rem;
+  padding: 5rem;
+  font-weight: 500;
+  color: #856b39;
+  background: #000000;
+}
+

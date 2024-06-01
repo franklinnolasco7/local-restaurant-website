@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+        <script src="https://smtpjs.com/v3/smtp.js"></script> <!--HOST SERVER/EMAIL SERVICE-->
+        <script src="resto.js"></script>
+        <title>Kuya Niño's Panciteria</title>
+    </head>
+    <body>
+        <!--navigation bar-->
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="burger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="home-items">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#menu">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#feedbacks">Feedbacks</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <h1 class="logo">Kuya Niños Panciteria</h1>
+            </div>
+        </nav>
+        <!--showcase-->
+        <section class="showcase-area" id="showcase">
+            <div class="showcase-container">
+                <h1 class="tag-line" id="home">Presyong Pangmasa,</h1>
+                <p class="tag-line">Masarap Pa!</p>
+                <a href="#food-menu" class="btn btn-primary">Best Seller</a>
+            </div>
+        </section>
+        <!--about-->
+        <section id="about">
+            <div class="about-wrapper container">
+                <div class="about-text">
+                    <p class="small">About Us</p>
+                    <h2>For the past 8 years, we have been providing affordable foods.</h2>
+                    <p> Welcome to our Filipino panciteria! We are a family-owned restaurant that has been serving delicious and authentic Filipino cuisine for several years. Our mission is to provide our customers with a warm and welcoming dining experience while offering a diverse menu that showcases the rich flavors of Filipino cuisine. </p>
+                </div>
+                <div class="about-img">
+                    <img src="Images/lumpiang-shanghai.jpg" alt="lumpiang-shanghai"/>
+                </div>
+            </div>
+        </section>
+        <!--menu-->
+        <section id="menu">
+            <div class="menu-text">
+                <p class="header">Try some of our Filipino cuisine!</p>
+                <p> Our menu features a variety of popular Filipino dishes. We serve traditional Filipino dishes such as adobo, sinigang, sisig, and various types of pancit, but our specialty is the Pancit Habhab and lumpiang shanghai, which have a distinct flavor that will satisfy your taste buds. </p>
+            </div>
+            <div class="menu-img">
+                <img src="Images/menu-picture.jpg" alt="menu-image" />
+            </div>
+            </div>
+        </section>
+        <!--food menu-->
+        <section id="food-menu">
+            <h2 class="food-menu-heading">Best Seller</h2>
+            <div class="food-menu-container container">
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="Images/palabok.jpg" alt="palabok-image" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-title">Palabok</h2>
+                        <p> A noodle dish made with rice noodles, shrimp sauce, pork, shrimp, and various toppings such as hard-boiled eggs, crushed pork cracklings, and chopped green onions. </p>
+                        <p class="food-price">Price: &#8369; 99</p>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="Images/dinuguan.jpg" alt="dinuguan-image" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-title">Dinuguan</h2>
+                        <p> A savory stew made with pork blood, pork meat, vinegar, garlic, and chili peppers, often served with steamed rice or puto (rice cakes). </p>
+                        <p class="food-price">Price: &#8369; 120</p>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="Images/lechong-kawali.jpg" alt="lechong-kawali-image" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-title">Lechong Kawali</h2>
+                        <p> Crispy deep-fried pork belly, often served with a dipping sauce made with vinegar, soy sauce, and chopped onions and chili peppers. </p>
+                        <p class="food-price">Price: &#8369; 230</p>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="Images/sinigang.jpg" alt="sinigang-image" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-title">Sinigang</h2>
+                        <p> A sour and savory soup made with meat or seafood, vegetables, tamarind or other souring agents, and various seasonings, often served with steamed rice. </p>
+                        <p class="food-price">Price: &#8369; 180</p>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="Images/pork-adobo.jpg" alt="pork-adobo-image" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-title">Pork Adobo</h2>
+                        <p> A classic Filipino dish made with pork belly, vinegar, soy sauce, garlic, and black pepper, simmered until tender and flavorful. </p>
+                        <p class="food-price">Price: &#8369; 200</p>
+                    </div>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="Images/sisig.jpg" alt="sisig-image" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-title">Sizzling Sisig</h2>
+                        <p> A sizzling plate of chopped pig's head and liver seasoned with vinegar, onions, and chili peppers, often topped with a raw egg and served with rice and calamansi (lime) wedges. </p>
+                        <p class="food-price">Price: &#8369; 250</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--feedbacks-->
+        <section id="feedbacks">
+            <h2 class="feedback-title">Costumers Feedbacks</h2>
+            <div class="feedback-container container">
+                <div class="feedback-box">
+                    <div class="customer-detail">
+                        <div class="customer-photo">
+                            <img src="Images/gordon-ramsay.jpg" alt="gordon-ramsay" />
+                            <p class="customer-name">Gordon Ramsay</p>
+                        </div>
+                    </div>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="feedback-text"> I never thought I'd enjoy pork blood until I tried the dinuguan, it was surprisingly delicious. </p>
+                </div>
+                <div class="feedback-box">
+                    <div class="customer-detail">
+                        <div class="customer-photo">
+                            <img src="Images/jessica-lee.jpg" alt="jessica-lee" />
+                            <p class="customer-name">Jessica Lee</p>
+                        </div>
+                    </div>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="feedback-text"> The sizzling sisig was a flavor explosion in my mouth, definitely coming back for more! </p>
+                </div>
+                <div class="feedback-box">
+                    <div class="customer-detail">
+                        <div class="customer-photo">
+                            <img src="Images/uncle-roger.jpg" alt="uncle-roger" />
+                            <p class="customer-name">Uncle Roger</p>
+                        </div>
+                    </div>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="feedback-text"> The lechong kawali was crispy and savory, and the dipping sauce was the perfect accompaniment. </p>
+                </div>
+            </div>
+        </section>
+        <!--contacts-->
+        <section id="contact">
+            <div class="contact-wrap">
+                <div class="contact-in">
+                    <h1>Contact Info</h1>
+                    <h2>
+                        <i class="fa fa-phone" aria-hidden="true"></i> Phone
+                    </h2>
+                    <p>+63-919-604-8401</p>
+                    <h2>
+                        <i class="fa fa-envelope" aria-hidden="true"></i> Email
+                    </h2>
+                    <p>KNP@gmail.com</p>
+                    <h2>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> Address
+                    </h2>
+                    <p>Gen. Luna Street corner F. Baltazar Street Angeles, Z-4, Tayabas</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/people/Kuya-Ni%C3%B1os-Panciteria/100063930916653/?paipv=0&eav=AfZmHs7o0dlHqFMWqMr5cUwfc_ws5zULjwncFiOPZTW4sUN_xKUicnVpV3sz54UzOC4&_rdr">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/search?q=kuya+ninos+panciteria&oq=kuya+nin&aqs=chrome.1.69i57j69i59j69i61l2j69i60.2295j0j1&sourceid=chrome&ie=UTF-8&bshm=lbse/1">
+                                <i class="fa fa-google" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-in">
+                    <h1>Send a Message</h1>
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <input type="text" placeholder="Full Name" id="name" class="contact-in-input" required>
+                        <input type="text" placeholder="Email" id="email" class="contact-in-input" required>
+                        <input type="text" placeholder="Subject" id="" class="contact-in-input" required>
+                        <textarea placeholder="Enter Message" class="contact-in-textarea"></textarea>
+                        <button type="submit" id="message" row="4" class="contact-in-btn">Submit</button>
+                    </form>
+                </div>
+                <div class="contact-in">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.862100471933!2d121.59207917498748!3d14.026187286394856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd4db35097753f%3A0xb9b345c5ae3350d!2sKuya%20Nino&#39;s%20Panciteria!5e0!3m2!1sen!2sph!4v1681394860912!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <!--footer-->
+        <footer id="footer">
+            <h2>&copy; 2023 Kuya Niño's Panciteria. All Rights Reserved. </h2>
+        </footer>
+    </body>
+</html>
